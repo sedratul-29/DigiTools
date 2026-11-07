@@ -2,6 +2,7 @@ import './App.css';
 import Header from './Component/Header/Header';
 import Banner_1 from './Component/Banner_1/Banner_1';
 import StatsSection from './Component/Stats_Section/StatsSection';
+import StepSection from './Component/Step_Section/StepSection';
 function App() {
 
   return (
@@ -10,6 +11,7 @@ function App() {
       <hr  className='opacity-8'/>
       <Banner_1></Banner_1>
       <StatsSection></StatsSection>
+      <StepSection></StepSection>
     </div>
   )
 }
