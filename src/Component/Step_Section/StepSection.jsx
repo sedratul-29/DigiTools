@@ -15,7 +15,7 @@ const StepSection = () => {
                     </div>
                     <figure className="px-10 pt-10">
                         <img
-                            src={pic2}
+                            src={pic1}
                             alt="Package"
                             className="rounded-xl "
                         />
