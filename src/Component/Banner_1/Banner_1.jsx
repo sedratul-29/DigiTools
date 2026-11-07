@@ -5,10 +5,10 @@ const Banner_1 = () => {
         <div className="flex items-center px-[200px] py-[60px] gap-[60px]">
             <div className="">
                 <div className="space-y-4 mb-[30px]">
-                    <div className="bg-[#E1E7FF]">
-                        <button>
+                    <div className="">
+                        <span className="bg-[#E1E7FF] px-4 py-2 rounded-[1000px]">
                             <a href="" className="font-medium text-base bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent">New: AI-Powered Tools Available</a>
-                        </button>
+                        </span>
                     </div>
 
                     <h1 className="opacity-90 font-extrabold text-[70px] text-[#101727] leading-21">Supercharge Your<br />Digital Workflow</h1>
