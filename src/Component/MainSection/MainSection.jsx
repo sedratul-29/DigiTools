@@ -7,9 +7,17 @@ const MainSection = ({ packagesPromise }) => {
 
     const [selected, setSelected] = useState("Products");
     // console.log(selected)
-    const [selectedProducts,setSelectedProducts] = useState([]);
-    const handleSelectedProducts = (selectedProduct)=>{
-        setSelectedProducts([...selectedProducts,selectedProduct]);
+
+    //Lift up the State
+    const [selectedProducts, setSelectedProducts] = useState([]);
+    const handleSelectedProducts = (selectedProduct) => {
+        for (const s of selectedProducts) {
+            if ((s.id == selectedProduct.id) && (selectedProducts.length != 0)) {
+                alert("This product is already in your cart!");
+                return;
+            }
+        }
+        setSelectedProducts([...selectedProducts, selectedProduct]);
     }
 
     const packages = use(packagesPromise);
@@ -29,8 +37,8 @@ const MainSection = ({ packagesPromise }) => {
             <div className="mx-[200px]">
                 {
                     selected === "Products" ?
-                        <AvailableProduct packages={packages} handleSelectedProducts={handleSelectedProducts}/> :
-                        <CardProduct selectedProducts={selectedProducts}/>
+                        <AvailableProduct packages={packages} handleSelectedProducts={handleSelectedProducts} /> :
+                        <CardProduct selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} />
                 }
             </div>
         </div>
