@@ -1,5 +1,5 @@
 
-const CardProduct = ({ selectedProducts , setSelectedProducts }) => {
+const CardProduct = ({ selectedProducts, setSelectedProducts }) => {
 
     const handleRemove = (removeSelectedProduct) => {
         console.log(selectedProducts);
@@ -8,6 +8,15 @@ const CardProduct = ({ selectedProducts , setSelectedProducts }) => {
         )
         setSelectedProducts(filteredPlayer);
     }
+
+    const totalPrice = selectedProducts.reduce(
+        (total, product) => total + product.price, 0
+    );
+
+    // let totalPrice = 0;
+    // for (const product of selectedProducts) {
+    //     totalPrice = totalPrice + product.price;
+    // }
 
     return (
         <div className="p-10 space-y-6 border-2 border-[#F2F2F2] rounded-2xl">
@@ -34,7 +43,7 @@ const CardProduct = ({ selectedProducts , setSelectedProducts }) => {
             </div>
             <div className="flex justify-between items-center">
                 <p className="text-[#627382] font-normal text-base">Total:</p>
-                <h4 className="font-bold text-2xl text-[#101727]">$78</h4>
+                <h4 className="font-bold text-2xl text-[#101727]">${totalPrice}</h4>
             </div>
             <div>
                 <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[100px] text-base font-bold text-white btn-block py-6">Proceed to Checkout</button>

@@ -25,7 +25,7 @@ const MainSection = ({ packagesPromise }) => {
     // console.log(Array.isArray(packages));
 
     return (
-        <div className=" mx-auto my-[120px]">
+        <div className="lg: mx-auto my-[120px]">
             <div className="text-center mb-10">
                 <h1 className="font-extrabold text-5xl text-[#101727] mb-4">Premium Digital Tools</h1>
                 <p className="font-normal text-base text-[#627382] leading-5 mb-4">Choose from our curated collection of premium digital products designed<br />to boost your productivity and creativity.</p>
@@ -34,7 +34,7 @@ const MainSection = ({ packagesPromise }) => {
                     <button onClick={() => setSelected("Cart")}>Cart (2)</button>
                 </div>
             </div>
-            <div className="mx-[200px]">
+            <div className="lg:mx-[200px]">
                 {
                     selected === "Products" ?
                         <AvailableProduct packages={packages} handleSelectedProducts={handleSelectedProducts} /> :
