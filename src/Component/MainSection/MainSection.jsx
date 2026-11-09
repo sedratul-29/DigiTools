@@ -5,7 +5,7 @@ const MainSection = ({ packagesPromise }) => {
 
     const packages = use(packagesPromise);
     console.log(packages);
-    console.log(Array.isArray(packages))
+    console.log(Array.isArray(packages));
 
     return (
         <div className=" mx-auto my-[120px]">
@@ -17,7 +17,7 @@ const MainSection = ({ packagesPromise }) => {
                     <button>Cart (2)</button>
                 </div>
             </div>
-            <div>
+            <div className="mx-[200px] grid grid-cols-3">
                 {
                     packages.map(product => <Product key={product.id} product={product}></Product>)
                 }
