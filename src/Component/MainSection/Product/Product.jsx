@@ -5,7 +5,7 @@ const Product = ({ product , handleSelectedProducts}) => {
     }
     return (
         <div className="">
-            <div className="border-[#F2F2F2] border-2 rounded-2xl  w-95  shadow-sm">
+            <div className="border-[#F2F2F2] border-2 rounded-2xl  lg:w-95  shadow-sm">
                 <div className="card-body">
                     <span className="badge badge-xs badge-warning">{product.tag}</span>
                     <img src={product.icon} className="w-8 h-8" alt="" />

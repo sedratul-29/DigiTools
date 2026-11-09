@@ -2,7 +2,7 @@ import DigiTool from "../../assets/products/DigiTools.png"
 import ShoppingCart from "../../assets/products/shopping-cart.png"
 const Header = () => {
     return (
-        <div className="lg:flex items-center px-[200px] py-[26px]">
+        <div className="px-4 py-4 grid grid-cols-3 lg:flex lg:items-center lg:px-[200px] lg:py-[26px]">
             <div className="lg:mr-[179.5px]">
                 <img src={DigiTool} alt="DigiTool Logo" />
             </div>

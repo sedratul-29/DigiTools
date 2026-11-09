@@ -2,8 +2,8 @@ import DigiTool_1 from "../../assets/products/DigiTools (1).png";
 import "./Footer.css"
 const Footer = () => {
     return (
-        <div className="px-[200px] pt-[120px] bg-[#101727]">
-            <div className="flex items-center space-x-12 border-1 border-white">
+        <div className="lg:px-[200px] lg:pt-[120px] bg-[#101727]">
+            <div className="flex flex-col lg:flex-row items-center space-x-12 border-1 border-white">
                 <div className="mb-15">
                     <img src={DigiTool_1} alt="" className="mb-4" />
                     <p className="text-white font-normal text-base opacity-80 leading-6">Premium digital tools for creators,<br />professionals, and businesses. Work smarter<br />with our suite of powerful tools.</p>
