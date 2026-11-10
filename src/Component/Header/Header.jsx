@@ -2,7 +2,7 @@ import DigiTool from "../../assets/products/DigiTools.png"
 import ShoppingCart from "../../assets/products/shopping-cart.png"
 const Header = () => {
     return (
-        <div className="px-4 py-4 grid grid-cols-3 lg:flex lg:items-center lg:px-[200px] lg:py-[26px]">
+        <div className="px-4 py-4 grid grid-cols-3 gap-10 lg:flex lg:gap-0 lg:items-center lg:px-[200px] lg:py-[26px]">
             <div className="lg:mr-[179.5px]">
                 <img src={DigiTool} alt="DigiTool Logo" />
             </div>
@@ -15,10 +15,10 @@ const Header = () => {
                     <li><a href="" className="lg:font-semibold text-base text-[#101727] opacity-90% leading-[120%]">FAQ</a></li>
                 </nav>
             </div>
-            <div className="lg:flex items-center gap-4">
+            <div className="lg:flex lg:items-center gap-4">
                 <img src={ShoppingCart} alt="" />
                 <a href="" className="lg:font-semibold text-base text-[#101727] opacity-90% leading-[120%]">Login</a>
-                <button className="lg:btn rounded-[10000px] font-semibold text-base text-white bg-linear-to-r from-[#4F39F6] from-0% to-[#9514FA] to-100% px-4 py-[12.5px]">Get Started</button>
+                <button className="px-6 rounded-[100px] py-3 text-xs lg:btn lg:rounded-[10000px] font-semibold lg:text-base text-white bg-linear-to-r from-[#4F39F6] from-0% to-[#9514FA] to-100% lg:px-4 lg:py-[12.5px]">Get Started</button>
             </div>
         </div>
     );
