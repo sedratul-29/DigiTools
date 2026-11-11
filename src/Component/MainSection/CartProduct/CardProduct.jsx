@@ -18,6 +18,10 @@ const CardProduct = ({ selectedProducts, setSelectedProducts }) => {
     //     totalPrice = totalPrice + product.price;
     // }
 
+    const handleProceed = () => {
+        setSelectedProducts([]);
+    }
+
     return (
         <div className="px-2 py-6 lg:p-10 space-y-6 border-2 border-[#F2F2F2] rounded-2xl">
             <h4 className="font-bold text-2xl text-[#101727]">Your Cart</h4>
@@ -46,7 +50,7 @@ const CardProduct = ({ selectedProducts, setSelectedProducts }) => {
                 <h4 className="font-bold text-2xl text-[#101727]">${totalPrice}</h4>
             </div>
             <div>
-                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[100px] text-base font-bold text-white btn-block py-6">Proceed to Checkout</button>
+                <button className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-[100px] text-base font-bold text-white btn-block py-6" onClick={handleProceed}>Proceed to Checkout</button>
             </div>
         </div>
 
